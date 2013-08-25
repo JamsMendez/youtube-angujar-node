@@ -1,0 +1,12 @@
+<label>Buscar
+	<input ng-model='ModuleYoutube.search' type='text' />
+</label>
+<input type='button' value='Buscar' ng-click='ModuleYoutube.searchVideo()' />
+	
+<div>
+	<p ng-repeat='video in ModuleYoutube.videos'>
+		<label>{{ video.title }}</label>
+		<br>
+		<img ng-src="{{ video.url }}">
+	</p>
+</div>
